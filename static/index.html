@@ -363,12 +363,6 @@
         const API_URL = 'https://securememo-ai.onrender.com';
         let isProcessing = false;
 
-        // Configure marked options
-        marked.setOptions({
-            breaks: true,   // convert \n to <br>
-            gfm: true       // enable GitHub Flavored Markdown
-        });
-
         // Enable sending with Enter key
         document.getElementById('userInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter' && !isProcessing) {
@@ -427,7 +421,7 @@
 
             if (sender === 'agent') {
                 // Parse markdown for agent responses
-                bubble.innerHTML = marked.parse(text);
+                bubble.innerHTML = marked.parse(text, { breaks: true, gfm: true });
             } else {
                 // Plain text for user messages
                 bubble.textContent = text;
