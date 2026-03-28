@@ -1,0 +1,22 @@
+# Core Logic
+# threshold 1.0.0 version of langchain because our agent uses create_agent() which is available v>=1.0.0
+langchain>=1.0.0
+langsmith
+langchain-community
+langchain-google-genai
+langchain-core
+langchain-text-splitters
+
+# Data & PDF Processing
+pypdf
+pandas
+openpyxl
+
+# Vector Store & Search
+chromadb
+rank-bm25
+
+# Environment
+python-dotenv
+fastapi
+uvicorn[standard]
