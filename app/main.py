@@ -15,12 +15,12 @@ REQUIRED_FILES = [
 ]
 
 app = FastAPI(
-    title="AlgoRhythm Agent API",
+    title="SecureMemo AI",
     description="""An agent that interacts with multiple 
                     sub agents and can read the company
                     projects, meeting notes, and employee
                     data to answer questions and assign the
-                    taskspowered  by LangGraph""",
+                    tasks powered  by LangGraph""",
     version="1.0.0"
 )
 
